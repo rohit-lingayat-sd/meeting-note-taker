@@ -1,0 +1,28 @@
+{
+  "name": "meeting-note-taker",
+  "version": "1.0.0",
+  "description": "CLI to record meetings → transcribe with Whisper → generate structured notes",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "record": "npm run build && node dist/cli.js record",
+    "summarize": "npm run build && node dist/cli.js summarize"
+  },
+  "keywords": [
+    "meeting",
+    "transcription",
+    "whisper",
+    "ai",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "whisper-node": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
+  }
+}
