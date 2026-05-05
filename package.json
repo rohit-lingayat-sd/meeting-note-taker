@@ -1,0 +1,29 @@
+{
+  "name": "meeting-note-taker",
+  "version": "0.1.0",
+  "description": "Records meetings, transcribes locally with Whisper, hands the transcript off to any AI tool.",
+  "bin": {
+    "mnt": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "mnt": "tsx src/cli.ts",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dayjs": "^1.11.13",
+    "nodejs-whisper": "^0.2.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
